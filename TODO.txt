@@ -1,0 +1,5 @@
+Alternative layout for for the portfolio:
+Have in that that there isa pop-up for the summary instead of the seperoate page
+
+so that when the user cliciks the "View More" it opens the real page instead.
+
