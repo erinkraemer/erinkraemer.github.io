@@ -40,7 +40,7 @@
 <nav class="navbar navbar-expand-lg  main-nav " id="navbar">
 	<div class="container">
 	  <a class="navbar-brand" href="index.html">
-	  	<img src="images/logo.png" alt="" class="img-fluid" width="200px" height="150px">
+	  	<img src="images/signature.jpg" alt="" class="img-fluid" width="200px" height="150px">
 	  </a>
 
 	  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,7 +93,7 @@
       <div class="col-lg-12">
         
         <div class="text-left">
-          <button class="btn btn-dark btn-small" onclick="history.back()">Go Back</button>
+          <!-- <button class="btn btn-dark btn-small" onclick="history.back()">Go Back</button> -->
           
 
         </div>
@@ -102,6 +102,18 @@
   </div>
 </section>
 <!-- contact form start -->
+<script>
+    function copyEmail() {
+        /* Copy the email */
+        navigator.clipboard.writeText("erinkraemer@berkeley.edu");
+        const button = event.srcElement;
+        setTimeout(()=> {
+            button.innerText = "Email copied!";
+        },1000)
+        // /* Alert the copied text */
+        // alert("Copied the text: " + "erinkraemer@berkeley.edu");
+}
+</script>
 <section class="contact section">
     <div class="container">
         <div class="row">
@@ -109,77 +121,30 @@
                 <h4>Contact Info</h4>
                 <p>Let's chat about your organization's needs, potential jobs, my past projects, etc...</p>
             </div>
-            <div class="col-lg-4 mb-4 mb-lg-0 col-md-4">
-                <h4>Address</h4>
-                <p>3971 Wines Lane Houston, Texas 77036 <br>363 Detroit Street</p>
-            </div>
             <div class="col-lg-4 col-md-4">
-                <h4>Contact</h4>
-                 <p class="mb-0">info@example.com</p>
-                <p class="mb-0">1800 667 3322</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="google-map">
-                    <div id="map"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="text-center mb-5 contact-title">
-                    <h2>Contact us</h2>
-                </div>
-
-                <form id="contact-form" class="contact__form mt-5" method="post" action="mail.php">
-             <!-- form message -->
                 <div class="row">
-                    <div class="col-12">
-                        <div class="alert alert-success contact__msg" style="display: none" role="alert">
-                            Your message was sent successfully.
-                        </div>
+                    <h4>Contact</h4>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <p class="mb-0">erinkraemer (at symbol, no spaces) berkeley.edu</p>
+                    </div>
+                    <div class="col-2">
+                        <button class="btn btn-main" onclick="copyEmail()">Copy email</button>
                     </div>
                 </div>
-                <!-- end message -->
-                <div class="form-row">
-                    <div class="col-lg-6">
-                        <div class="form-group mb-3">
-                            <input name="name" type="text" class="form-control" placeholder="Your Name">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="form-group mb-3">
-                            <input name="name" type="text" class="form-control" placeholder="Your Subject">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-12">
-                        <div class="form-group mb-3">
-                            <input name="email" type="email" class="form-control" placeholder="Email Address">
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                         <div class="form-group-2 mb-4">
-                            <textarea name="message" class="form-control" rows="6" placeholder="Your Message"></textarea>
-                        </div>
-
-                        <div class="text-center">
-                            <button class="btn btn-main" name="submit" type="submit">Send Message</button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-            </div>  
+                                
+                 
+            </div>
+        </div>  
         </div>
     </div>
 </section>
 
-<section class="footer">
+<section class="footer" style="padding-top: 20px;">
 	<div class="container">
 		<div class="row ">
-			<div class="col-lg-6">
+			<!-- <div class="col-lg-6">
 				<p class="mb-0">Copyrights © 2019. Designed & Developed by <a href="themefisher.com" class="text-white">Themefisher</a></p>
 			</div>
 			<div class="col-lg-6">
@@ -194,7 +159,7 @@
 						<li class="list-inline-item"><a href="https://dribbble.com/themefisher/" target="_blank"><i class="ti-dribbble mr-3"></i></a></li>
 					</ul>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </section>
